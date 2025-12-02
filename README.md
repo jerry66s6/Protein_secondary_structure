@@ -72,22 +72,17 @@ id,secondary_structure
 
 The codebase implements the following high-level logic:
 
-1.  **Data Loading:**
-    * Load `sequences.fasta` into a dictionary `{protein_id: sequence}`.
-    * Load `train.tsv` using pandas.
-2.  **Dataset Construction:**
-    * Map textual labels (H, E, C) to integers.
+1.  **Dataset Construction:**
+    * Map textual labels to integers.
     * Align sequences with labels.
     * Tokenize using the ESM2 tokenizer (truncating/padding to `max_length`, e.g., 1024).
-3.  **Fine-tuning:**
+2.  **Fine-tuning:**
     * Initialize `EsmForTokenClassification.from_pretrained("facebook/esm2_t6_8M_UR50D")`.
     * Train using Hugging Face `Trainer`.
-    * Save the best checkpoint.
-4.  **Inference:**
+3.  **Inference:**
     * Load the fine-tuned checkpoint.
     * Run the model on full sequences for IDs found in `test.tsv`.
     * Perform `argmax` on logits to get the predicted label.
-    * Map integers back to symbols (H/E/C) and export to CSV.
 
 ## 4. Deployed Model & Demo
 
