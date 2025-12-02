@@ -22,6 +22,7 @@ Standard FASTA format containing the full amino acid sequences.
 
 “>3JRN
 MVLSEGEWQLVLHVWAKVEADVAGHGQDILIRLFK...”
+
 “>3KVH
 EVQLVESGGGLVQPGGSLRLSCAASGFTFSSYAM...”
 
@@ -32,9 +33,13 @@ EVQLVESGGGLVQPGGSLRLSCAASGFTFSSYAM...”
 A tab-separated file containing labeled residues.
 
 id	secondary_structure
+
 3JRN_LYS_8	H
+
 3JRN_LEU_9	H
+
 3JRN_SER_10	C
+
 
 **ID Parsing Logic:**
 The code parses the `id` column to map labels to the sequence:
