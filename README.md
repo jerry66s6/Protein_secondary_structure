@@ -20,10 +20,10 @@ The pipeline requires three main files. You can adapt the scripts to your own da
 
 Standard FASTA format containing the full amino acid sequences.
 
->3JRN
-MVLSEGEWQLVLHVWAKVEADVAGHGQDILIRLFK...
->3KVH
-EVQLVESGGGLVQPGGSLRLSCAASGFTFSSYAM...
+“>3JRN
+MVLSEGEWQLVLHVWAKVEADVAGHGQDILIRLFK...”
+“>3KVH
+EVQLVESGGGLVQPGGSLRLSCAASGFTFSSYAM...”
 
 * **Note:** The string after `>` is the **Protein ID** (e.g., `3JRN`). This ID is used as the key to look up sequences during training and inference.
 
