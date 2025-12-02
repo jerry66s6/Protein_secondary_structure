@@ -14,7 +14,7 @@ This repository provides an end-to-end pipeline to fine-tune a small ESM2 model 
 
 ## 2. Data Format
 
-The pipeline requires three main files. You can adapt the scripts to your own data by ensuring your files match the formats below.
+The pipeline requires two main files. You can adapt the scripts to your own data by ensuring your files match the formats below.
 
 ### 2.1 Sequences (`sequences.fasta`)
 
@@ -56,7 +56,3 @@ The trained model and a demonstration app are available on Hugging Face.
 * **Online Demo & API:**
     https://huggingface.co/spaces/Jerry1030/esm2-secstruct-pred
 
-    > **Space Features:**
-    > * Wraps the model in a FastAPI application.
-    > * Provides a web UI for inputting sequences and visualizing structure predictions.
-    > * Includes a dashboard showing usage stats (daily API calls).
